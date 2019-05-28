@@ -3,6 +3,7 @@ FROM golang
     RUN apt update && \ 
         apt install patch \
         rsync \
+        sudo \
         libmpfr-dev \
         libmpc-dev \
         libgmp-dev -y
