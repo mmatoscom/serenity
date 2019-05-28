@@ -9,4 +9,5 @@ FROM golang
     ADD . .
     RUN ./Toolchain/BuildIt.sh
     RUN . ./Toolchain/UseIt.sh
-    WORKDIR Kernel/
+    WORKDIR Kernel
+    RUN ./makeall.sh 
